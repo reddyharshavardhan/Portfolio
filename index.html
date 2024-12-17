@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .download-btn {
+      display: flex;
+      width: 15em;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 20px;
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      border-radius: 50px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background-color 0.7s ease;
+
+    }
+
+
+    .download-btn:hover {
+      background-color: #fed793;
+      font-size: 17px;
+      transition: background-color 0.7s ease;
+      color: black;
+
+    }
+
+
+  </style>
+  <title>Harsha Portfolio</title>
+
+  <link rel="shortcut icon" href="./assets/images/my-avatar.jpg" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="toggle-container">
+  <div class="toggle-button">
+    <div class="toggle-ball">
+      <div class="moon-icon">
+        <div class="half-moon"></div>
+      </div>
+      <div class="sun-icon"></div>
+      <div class="cloud-icon"></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <div class="image-container">
+            <img src="./assets/images/Harsha.jpg" alt="Original Image">
+            <img class="hover-image avatar-box" src="./assets/images/my-avatar (2).png" alt="Hover Image">
+          </div>
+        </figure>
+
+
+        <div class="info-content">
+          <h1 class="name" title="">Nagireddy</h1>
+          <h1 class="name" title="">Harshavardhan Reddy</h1>
+          <br> <!-- Blank line -->
+
+          <!-- This is where the title will be dynamically updated -->
+          <h3><span class="text"></span></h3>
+
+          <div id="job-title"></div>
+        </div>
+
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>More Info</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:reddyharshavardhan125@gmail.com" class="contact-link">reddyharshavardhan125@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+91 8519810461" class="contact-link">+91 8519810461</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="06-11-2001">November 06, 2001</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Bengaluru, Karnataka India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/nagireddy-harshavardhan-reddy-95b8691a7" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/reddyharshavardhan" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://x.com/nagireddyharsh1" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/cherrydarlingram/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Hire Me Section -->
+        <section class="hire-me-section">
+          <a href="mailto:reddyharshavardhan125@gmail.com" class="download-btn">Hire Me</a>
+        </section>
+
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Project</button>
+          </li>
+
+
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hello, I'm Nagireddy Harshavardhan Reddy. I'm a problem solver and I enjoy building better web experiences.
+          </p>
+
+          <p>
+            A computer science graduate with a sharp eye for detail and hands-on experience in Python and web application development. I'm looking for an entry-level job where
+            I can put my technical knowledge, problem-solving abilities, and strong work strong work ethic to use in a collaborative environment.
+          </p>
+        </section>
+
+            <section class="timeline">
+              <div class="title-wrapper">
+                <div class="icon-box">
+                  <ion-icon name="book-outline"></ion-icon>
+                </div>
+                <h3 class="h3">Education</h3>
+              </div>
+
+              <ol class="timeline-list">
+                <li class="timeline-item">
+                  <h4 class="h4 timeline-item-title">Bachelor of Technology</h4>
+                  <span>2019 — 2023</span>
+                  <p class="timeline-text">
+                    Amrita Vishwa Vidyapeetham, Bengaluru
+                  </p>
+                  <p class="timeline-text">Branch: Electronics and Computer Engineering</p>
+                </li>
+
+                <li class="timeline-item">
+                  <h4 class="h4 timeline-item-title">Intermediate</h4>
+                  <span>2017 - 2019</span>
+                  <p class="timeline-text">
+                    Narayana Junior College, Vijayawada
+                  </p>
+                </li>
+
+                <li class="timeline-item">
+                  <h4 class="h4 timeline-item-title">High School</h4>
+                  <span>2017</span>
+                  <p class="timeline-text">
+                    Vasavi Vidya Nikethan, Cumbum
+                  </p>
+                </li>
+              </ol>
+            </section>
+
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+        <a href="Nagireddy.Harshavardhan Reddy_Resume.pdf" class="download-btn" download>
+          <img src="./assets/images/icon-resume.png" alt="Icon" class="icon">
+          <p>Download CV</p>
+        </a>
+        <br>
+
+        <section class="timeline">
+              <div class="title-wrapper">
+                <div class="icon-box">
+                  <ion-icon name="briefcase-outline"></ion-icon>
+                </div>
+                <h3 class="h3">Work Experience</h3>
+              </div>
+
+              <ol class="timeline-list">
+                <li class="timeline-item">
+                  <h4 class="h4 timeline-item-title">Backend Developer Intern</h4>
+                  <span class="timeline-duration">Sep 2023 — Dec 2023</span>
+                  <p class="timeline-text">Company: <span class="company-name">Tradelyzer</span></p>
+                </li>
+              </ol>
+            </section>
+
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python </h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">HTML </h5>
+                <data value="60">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">CSS </h5>
+                <data value="50">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">SQL </h5>
+                <data value="50">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">AWS  </h5>
+                <data value="50">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">JavaScript  </h5>
+                <data value="50">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Java </h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+      <!--
+        - #project
+      -->
+
+      <article class="project" data-page="project">
+        <section class="projects">
+          <ul class="filter-list">
+            <li class="filter-item">
+            </li>
+          </ul>
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+            <ul class="select-list">
+              <li class="select-item">
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <header>
+          <h2 class="h2 article-title">projects</h2>
+        </header>
+
+        <section class="project-posts">
+
+          <ul class="project-posts-list">
+
+            <li class="project-post-item">
+              <a href="https://github.com/reddyharshavardhan/Automobile-retail-website" target="_blank">
+
+                <figure class="project-banner-box">
+
+
+
+                  <img src="./assets/images/project-1.png" alt="Automobile-retail-website" loading="lazy" target="_blank">
+                </figure>
+
+                <div class="project-content">
+
+                  <div class="project-meta">
+                    <p class="project-category">Automobile Retail Website</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">June - August, 2022</time>
+                  </div>
+
+                  <h3 class="h3 project-item-title">Automobile-retail-website</h3>
+
+                  <p class="project-text"><strong>Technologies:</strong> HTML, CSS, Bootstrap, JavaScript, Python, Django</p>
+
+                  <br> <!-- Adding a blank line -->
+
+                  <p class="project-text">
+                    A mini project for the pre-final year. This work, successfully built on Django, has proved to be an efficient platform for web development. Created a homepage and slider to fetch categories of products
+                    and display trending categories on the homepage. It was developed using PHP scripts and MySQL.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-post-item">
+              <a href="https://github.com/reddyharshavardhan/Student-Management-system" target="_blank">
+
+                <figure class="project-banner-box">
+
+
+
+                  <img src="./assets/images/project-2.png" alt="Career counselling" loading="lazy" target="_blank">
+                </figure>
+
+                <div class="project-content">
+
+                  <div class="project-meta">
+                    <p class="project-category">Amrita Student Management System Using Chatbot </p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fed - May, 2023</time>
+                  </div>
+
+                  <h3 class="h3 project-item-title">Amrita Student Management System Using Chatbot</h3>
+
+                  <p class="project-text"><strong>Technologies:</strong> HTML, CSS, Bootstrap, JavaScript, Python, Django, SQL</p>
+
+                  <br> <!-- Adding a blank line -->
+
+                  <p class="project-text">
+                    The pre-built modules and files are the ideal balance,even though the adddition of python might
+                    have made it a little slower.Make a homepage .a slider,a fetch group of branches, and a homepage
+                    with groups displayed accordingly, and the Information is stored in Database.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-post-item">
+              <a href="https://github.com/reddyharshavardhan/Diabetes-prediction" target="_blank">
+
+                <figure class="project-banner-box">
+                  <img src="./assets/images/project-3.png" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+
+                  <div class="project-meta">
+                    <p class="project-category">Diabetes-prediction website</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">March-May, 2022</time>
+                  </div>
+
+                  <h3 class="h3 project-item-title"> Diabetes-prediction</h3>
+
+                  <p class="project-text"><strong>Technologies:</strong> HTML, CSS, Bootstrap, Python, Flask</p>
+
+                  <br> <!-- Adding a blank line -->
+
+                  <p class="project-text">
+                    The application can check for the valid input for every fields. If the user enters an invalid value for any
+                    of the parameters, a warning message is displayed. If the user provides valid information, the
+                    application will predict whether the user has diabetes or not. After giving all the values for the web
+                    application we can know u have diabetes or not.
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-post-item">
+              <a href="https://github.com/reddyharshavardhan/Rakshabandhan.github.io" target="_blank">
+
+                <figure class="project-banner-box">
+                  <img src="./assets/images/project-4.png" alt="" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+
+                  <div class="project-meta">
+                    <p class="project-category">Raksha Bandhan website</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">September, 2024</time>
+                  </div>
+
+                  <h3 class="h3 project-item-title">Raksha Bandhan</h3>
+
+                  <p class="project-text"><strong>Technologies:</strong> HTML, CSS, Bootstrap, JS </p>
+
+                  <br> <!-- Adding a blank line -->
+
+                  <p class="project-text">
+                    As an affectionate present for my sister, I made a Raksha Bandhan website that highlights our relationship. To add even more special touches to the celebration, the website included interactive features, personalized messages, and photographs.
+                   </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-post-item">
+              <a href="https://github.com/reddyharshavardhan/Home-Challenge" target="_blank">
+
+                <figure class="project-banner-box">
+                  <img src="./assets/images/project-5.png" alt="" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+
+                  <div class="project-meta">
+                    <p class="project-category">TODO Application</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23"> November, 2024</time>
+                  </div>
+
+                  <h3 class="h3 project-item-title">Todo Application Website </h3>
+
+                  <p class="project-text"><strong>Technologies:</strong> HTML, Java, Springboot </p>
+
+                  <br> <!-- Adding a blank line -->
+
+                  <p class="project-text">
+                    Using Spring Boot, I created a to-do application with functionality for effectively adding, updating, and deleting items. The application's user-friendly interface and smooth backend connectivity allowed for real-time job management. </p>
+
+                </div>
+
+              </a>
+            </li>
+
+
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.629195465912!2d77.60932810000001!3d12.9315375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0x74ac224ce4d0f5c0!2sWJJ5%2BJP8%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1734080805375!5m2!1sen!2sin" 
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="https://api.web3forms.com/submit" method="POST" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="First name" required>
+              <input type="text" name="fullname" class="form-input" placeholder="Last name" required>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required>
+              <!-- Phone number input -->
+              <input type="number" 
+                     name="mobile_number" 
+                     class="form-input" 
+                     placeholder="Phone number" 
+                     required 
+                     oninput="validatePhoneNumber(this)" 
+                     maxlength="10">
+              <span id="phoneError" style="color: rgb(226, 120, 21); display: none;">Please provide a correct 10-digit phone number</span>
+            </div>
+
+            <script>
+              function validatePhoneNumber(input) {
+                const errorElement = document.getElementById('phoneError');
+                // Ensure the input length does not exceed 10 digits
+                if (input.value.length > 10) {
+                  input.value = input.value.slice(0, 10); // Trim the input to 10 digits
+                }
+
+                // Show error if input is not exactly 10 digits
+                if (input.value.length === 10) {
+                  errorElement.style.display = 'none';
+                } else {
+                  errorElement.style.display = 'block';
+                }
+              }
+            </script>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <input type="hidden" name="access_key" value="e3dc57d0-6116-486e-bc9c-efe32592a591">
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
